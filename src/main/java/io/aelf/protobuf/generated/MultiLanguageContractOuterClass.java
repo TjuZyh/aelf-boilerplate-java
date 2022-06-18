@@ -2473,7 +2473,7 @@ public final class MultiLanguageContractOuterClass {
   }
   /**
    * <pre>
-   * to store user address and class name 
+   * to store user address and class name
    * </pre>
    *
    * Protobuf type {@code AddressName}
@@ -2803,7 +2803,7 @@ public final class MultiLanguageContractOuterClass {
     }
     /**
      * <pre>
-     * to store user address and class name 
+     * to store user address and class name
      * </pre>
      *
      * Protobuf type {@code AddressName}
@@ -4806,6 +4806,2984 @@ public final class MultiLanguageContractOuterClass {
 
   }
 
+  public interface SetContractInputOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SetContractInput)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    String getParamsHash();
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    com.google.protobuf.ByteString
+        getParamsHashBytes();
+
+    /**
+     * <code>string paramsJson = 2;</code>
+     * @return The paramsJson.
+     */
+    String getParamsJson();
+    /**
+     * <code>string paramsJson = 2;</code>
+     * @return The bytes for paramsJson.
+     */
+    com.google.protobuf.ByteString
+        getParamsJsonBytes();
+  }
+  /**
+   * Protobuf type {@code SetContractInput}
+   */
+  public  static final class SetContractInput extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SetContractInput)
+      SetContractInputOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetContractInput.newBuilder() to construct.
+    private SetContractInput(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetContractInput() {
+      paramsHash_ = "";
+      paramsJson_ = "";
+    }
+
+    @Override
+    @SuppressWarnings({"unused"})
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SetContractInput();
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetContractInput(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              String s = input.readStringRequireUtf8();
+
+              paramsHash_ = s;
+              break;
+            }
+            case 18: {
+              String s = input.readStringRequireUtf8();
+
+              paramsJson_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractInput_descriptor;
+    }
+
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractInput_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              SetContractInput.class, Builder.class);
+    }
+
+    public static final int PARAMSHASH_FIELD_NUMBER = 1;
+    private volatile Object paramsHash_;
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    public String getParamsHash() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsHash_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    public com.google.protobuf.ByteString
+        getParamsHashBytes() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsHash_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int PARAMSJSON_FIELD_NUMBER = 2;
+    private volatile Object paramsJson_;
+    /**
+     * <code>string paramsJson = 2;</code>
+     * @return The paramsJson.
+     */
+    public String getParamsJson() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsJson_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsJson = 2;</code>
+     * @return The bytes for paramsJson.
+     */
+    public com.google.protobuf.ByteString
+        getParamsJsonBytes() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsJson_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getParamsHashBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, paramsHash_);
+      }
+      if (!getParamsJsonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 2, paramsJson_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getParamsHashBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, paramsHash_);
+      }
+      if (!getParamsJsonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, paramsJson_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof SetContractInput)) {
+        return super.equals(obj);
+      }
+      SetContractInput other = (SetContractInput) obj;
+
+      if (!getParamsHash()
+          .equals(other.getParamsHash())) return false;
+      if (!getParamsJson()
+          .equals(other.getParamsJson())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PARAMSHASH_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsHash().hashCode();
+      hash = (37 * hash) + PARAMSJSON_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsJson().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static SetContractInput parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractInput parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractInput parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractInput parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractInput parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractInput parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractInput parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractInput parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractInput parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static SetContractInput parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractInput parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractInput parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(SetContractInput prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SetContractInput}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SetContractInput)
+        SetContractInputOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractInput_descriptor;
+      }
+
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractInput_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                SetContractInput.class, Builder.class);
+      }
+
+      // Construct using MultiLanguageContractOuterClass.SetContractInput.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @Override
+      public Builder clear() {
+        super.clear();
+        paramsHash_ = "";
+
+        paramsJson_ = "";
+
+        return this;
+      }
+
+      @Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractInput_descriptor;
+      }
+
+      @Override
+      public SetContractInput getDefaultInstanceForType() {
+        return SetContractInput.getDefaultInstance();
+      }
+
+      @Override
+      public SetContractInput build() {
+        SetContractInput result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @Override
+      public SetContractInput buildPartial() {
+        SetContractInput result = new SetContractInput(this);
+        result.paramsHash_ = paramsHash_;
+        result.paramsJson_ = paramsJson_;
+        onBuilt();
+        return result;
+      }
+
+      @Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.setField(field, value);
+      }
+      @Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof SetContractInput) {
+          return mergeFrom((SetContractInput)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(SetContractInput other) {
+        if (other == SetContractInput.getDefaultInstance()) return this;
+        if (!other.getParamsHash().isEmpty()) {
+          paramsHash_ = other.paramsHash_;
+          onChanged();
+        }
+        if (!other.getParamsJson().isEmpty()) {
+          paramsJson_ = other.paramsJson_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        SetContractInput parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (SetContractInput) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private Object paramsHash_ = "";
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The paramsHash.
+       */
+      public String getParamsHash() {
+        Object ref = paramsHash_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsHash_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The bytes for paramsHash.
+       */
+      public com.google.protobuf.ByteString
+          getParamsHashBytes() {
+        Object ref = paramsHash_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsHash_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHash(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsHash() {
+        
+        paramsHash_ = getDefaultInstance().getParamsHash();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The bytes for paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHashBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+
+      private Object paramsJson_ = "";
+      /**
+       * <code>string paramsJson = 2;</code>
+       * @return The paramsJson.
+       */
+      public String getParamsJson() {
+        Object ref = paramsJson_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsJson_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 2;</code>
+       * @return The bytes for paramsJson.
+       */
+      public com.google.protobuf.ByteString
+          getParamsJsonBytes() {
+        Object ref = paramsJson_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsJson_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 2;</code>
+       * @param value The paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJson(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsJson() {
+        
+        paramsJson_ = getDefaultInstance().getParamsJson();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 2;</code>
+       * @param value The bytes for paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJsonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      @Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SetContractInput)
+    }
+
+    // @@protoc_insertion_point(class_scope:SetContractInput)
+    private static final SetContractInput DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new SetContractInput();
+    }
+
+    public static SetContractInput getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SetContractInput>
+        PARSER = new com.google.protobuf.AbstractParser<SetContractInput>() {
+      @Override
+      public SetContractInput parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetContractInput(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetContractInput> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<SetContractInput> getParserForType() {
+      return PARSER;
+    }
+
+    @Override
+    public SetContractInput getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetContractKeyOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SetContractKey)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    String getParamsHash();
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    com.google.protobuf.ByteString
+        getParamsHashBytes();
+  }
+  /**
+   * Protobuf type {@code SetContractKey}
+   */
+  public  static final class SetContractKey extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SetContractKey)
+      SetContractKeyOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetContractKey.newBuilder() to construct.
+    private SetContractKey(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetContractKey() {
+      paramsHash_ = "";
+    }
+
+    @Override
+    @SuppressWarnings({"unused"})
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SetContractKey();
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetContractKey(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              String s = input.readStringRequireUtf8();
+
+              paramsHash_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractKey_descriptor;
+    }
+
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractKey_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              SetContractKey.class, Builder.class);
+    }
+
+    public static final int PARAMSHASH_FIELD_NUMBER = 1;
+    private volatile Object paramsHash_;
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    public String getParamsHash() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsHash_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    public com.google.protobuf.ByteString
+        getParamsHashBytes() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsHash_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getParamsHashBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, paramsHash_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getParamsHashBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, paramsHash_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof SetContractKey)) {
+        return super.equals(obj);
+      }
+      SetContractKey other = (SetContractKey) obj;
+
+      if (!getParamsHash()
+          .equals(other.getParamsHash())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PARAMSHASH_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsHash().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static SetContractKey parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractKey parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractKey parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractKey parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractKey parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractKey parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractKey parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractKey parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractKey parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static SetContractKey parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractKey parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractKey parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(SetContractKey prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SetContractKey}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SetContractKey)
+        SetContractKeyOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractKey_descriptor;
+      }
+
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractKey_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                SetContractKey.class, Builder.class);
+      }
+
+      // Construct using MultiLanguageContractOuterClass.SetContractKey.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @Override
+      public Builder clear() {
+        super.clear();
+        paramsHash_ = "";
+
+        return this;
+      }
+
+      @Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractKey_descriptor;
+      }
+
+      @Override
+      public SetContractKey getDefaultInstanceForType() {
+        return SetContractKey.getDefaultInstance();
+      }
+
+      @Override
+      public SetContractKey build() {
+        SetContractKey result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @Override
+      public SetContractKey buildPartial() {
+        SetContractKey result = new SetContractKey(this);
+        result.paramsHash_ = paramsHash_;
+        onBuilt();
+        return result;
+      }
+
+      @Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.setField(field, value);
+      }
+      @Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof SetContractKey) {
+          return mergeFrom((SetContractKey)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(SetContractKey other) {
+        if (other == SetContractKey.getDefaultInstance()) return this;
+        if (!other.getParamsHash().isEmpty()) {
+          paramsHash_ = other.paramsHash_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        SetContractKey parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (SetContractKey) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private Object paramsHash_ = "";
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The paramsHash.
+       */
+      public String getParamsHash() {
+        Object ref = paramsHash_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsHash_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The bytes for paramsHash.
+       */
+      public com.google.protobuf.ByteString
+          getParamsHashBytes() {
+        Object ref = paramsHash_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsHash_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHash(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsHash() {
+        
+        paramsHash_ = getDefaultInstance().getParamsHash();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The bytes for paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHashBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+      @Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SetContractKey)
+    }
+
+    // @@protoc_insertion_point(class_scope:SetContractKey)
+    private static final SetContractKey DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new SetContractKey();
+    }
+
+    public static SetContractKey getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SetContractKey>
+        PARSER = new com.google.protobuf.AbstractParser<SetContractKey>() {
+      @Override
+      public SetContractKey parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetContractKey(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetContractKey> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<SetContractKey> getParserForType() {
+      return PARSER;
+    }
+
+    @Override
+    public SetContractKey getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SetContractValueOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:SetContractValue)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The paramsJson.
+     */
+    String getParamsJson();
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The bytes for paramsJson.
+     */
+    com.google.protobuf.ByteString
+        getParamsJsonBytes();
+  }
+  /**
+   * Protobuf type {@code SetContractValue}
+   */
+  public  static final class SetContractValue extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:SetContractValue)
+      SetContractValueOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SetContractValue.newBuilder() to construct.
+    private SetContractValue(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SetContractValue() {
+      paramsJson_ = "";
+    }
+
+    @Override
+    @SuppressWarnings({"unused"})
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SetContractValue();
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SetContractValue(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              String s = input.readStringRequireUtf8();
+
+              paramsJson_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractValue_descriptor;
+    }
+
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiLanguageContractOuterClass.internal_static_SetContractValue_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              SetContractValue.class, Builder.class);
+    }
+
+    public static final int PARAMSJSON_FIELD_NUMBER = 1;
+    private volatile Object paramsJson_;
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The paramsJson.
+     */
+    public String getParamsJson() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsJson_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The bytes for paramsJson.
+     */
+    public com.google.protobuf.ByteString
+        getParamsJsonBytes() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsJson_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getParamsJsonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, paramsJson_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getParamsJsonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, paramsJson_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof SetContractValue)) {
+        return super.equals(obj);
+      }
+      SetContractValue other = (SetContractValue) obj;
+
+      if (!getParamsJson()
+          .equals(other.getParamsJson())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PARAMSJSON_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsJson().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static SetContractValue parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractValue parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractValue parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractValue parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractValue parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static SetContractValue parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static SetContractValue parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractValue parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractValue parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static SetContractValue parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static SetContractValue parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static SetContractValue parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(SetContractValue prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code SetContractValue}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:SetContractValue)
+        SetContractValueOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractValue_descriptor;
+      }
+
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractValue_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                SetContractValue.class, Builder.class);
+      }
+
+      // Construct using MultiLanguageContractOuterClass.SetContractValue.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @Override
+      public Builder clear() {
+        super.clear();
+        paramsJson_ = "";
+
+        return this;
+      }
+
+      @Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiLanguageContractOuterClass.internal_static_SetContractValue_descriptor;
+      }
+
+      @Override
+      public SetContractValue getDefaultInstanceForType() {
+        return SetContractValue.getDefaultInstance();
+      }
+
+      @Override
+      public SetContractValue build() {
+        SetContractValue result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @Override
+      public SetContractValue buildPartial() {
+        SetContractValue result = new SetContractValue(this);
+        result.paramsJson_ = paramsJson_;
+        onBuilt();
+        return result;
+      }
+
+      @Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.setField(field, value);
+      }
+      @Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof SetContractValue) {
+          return mergeFrom((SetContractValue)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(SetContractValue other) {
+        if (other == SetContractValue.getDefaultInstance()) return this;
+        if (!other.getParamsJson().isEmpty()) {
+          paramsJson_ = other.paramsJson_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        SetContractValue parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (SetContractValue) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private Object paramsJson_ = "";
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return The paramsJson.
+       */
+      public String getParamsJson() {
+        Object ref = paramsJson_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsJson_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return The bytes for paramsJson.
+       */
+      public com.google.protobuf.ByteString
+          getParamsJsonBytes() {
+        Object ref = paramsJson_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsJson_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @param value The paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJson(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsJson() {
+        
+        paramsJson_ = getDefaultInstance().getParamsJson();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @param value The bytes for paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJsonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      @Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:SetContractValue)
+    }
+
+    // @@protoc_insertion_point(class_scope:SetContractValue)
+    private static final SetContractValue DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new SetContractValue();
+    }
+
+    public static SetContractValue getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SetContractValue>
+        PARSER = new com.google.protobuf.AbstractParser<SetContractValue>() {
+      @Override
+      public SetContractValue parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SetContractValue(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SetContractValue> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<SetContractValue> getParserForType() {
+      return PARSER;
+    }
+
+    @Override
+    public SetContractValue getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetContractInputOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GetContractInput)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    String getParamsHash();
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    com.google.protobuf.ByteString
+        getParamsHashBytes();
+  }
+  /**
+   * Protobuf type {@code GetContractInput}
+   */
+  public  static final class GetContractInput extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:GetContractInput)
+      GetContractInputOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetContractInput.newBuilder() to construct.
+    private GetContractInput(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetContractInput() {
+      paramsHash_ = "";
+    }
+
+    @Override
+    @SuppressWarnings({"unused"})
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GetContractInput();
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetContractInput(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              String s = input.readStringRequireUtf8();
+
+              paramsHash_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiLanguageContractOuterClass.internal_static_GetContractInput_descriptor;
+    }
+
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiLanguageContractOuterClass.internal_static_GetContractInput_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetContractInput.class, Builder.class);
+    }
+
+    public static final int PARAMSHASH_FIELD_NUMBER = 1;
+    private volatile Object paramsHash_;
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The paramsHash.
+     */
+    public String getParamsHash() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsHash_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsHash = 1;</code>
+     * @return The bytes for paramsHash.
+     */
+    public com.google.protobuf.ByteString
+        getParamsHashBytes() {
+      Object ref = paramsHash_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsHash_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getParamsHashBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, paramsHash_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getParamsHashBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, paramsHash_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof GetContractInput)) {
+        return super.equals(obj);
+      }
+      GetContractInput other = (GetContractInput) obj;
+
+      if (!getParamsHash()
+          .equals(other.getParamsHash())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PARAMSHASH_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsHash().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static GetContractInput parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractInput parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractInput parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractInput parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractInput parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractInput parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractInput parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GetContractInput parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GetContractInput parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static GetContractInput parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GetContractInput parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GetContractInput parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(GetContractInput prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code GetContractInput}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:GetContractInput)
+        GetContractInputOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractInput_descriptor;
+      }
+
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractInput_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetContractInput.class, Builder.class);
+      }
+
+      // Construct using MultiLanguageContractOuterClass.GetContractInput.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @Override
+      public Builder clear() {
+        super.clear();
+        paramsHash_ = "";
+
+        return this;
+      }
+
+      @Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractInput_descriptor;
+      }
+
+      @Override
+      public GetContractInput getDefaultInstanceForType() {
+        return GetContractInput.getDefaultInstance();
+      }
+
+      @Override
+      public GetContractInput build() {
+        GetContractInput result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @Override
+      public GetContractInput buildPartial() {
+        GetContractInput result = new GetContractInput(this);
+        result.paramsHash_ = paramsHash_;
+        onBuilt();
+        return result;
+      }
+
+      @Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.setField(field, value);
+      }
+      @Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof GetContractInput) {
+          return mergeFrom((GetContractInput)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(GetContractInput other) {
+        if (other == GetContractInput.getDefaultInstance()) return this;
+        if (!other.getParamsHash().isEmpty()) {
+          paramsHash_ = other.paramsHash_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        GetContractInput parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (GetContractInput) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private Object paramsHash_ = "";
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The paramsHash.
+       */
+      public String getParamsHash() {
+        Object ref = paramsHash_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsHash_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return The bytes for paramsHash.
+       */
+      public com.google.protobuf.ByteString
+          getParamsHashBytes() {
+        Object ref = paramsHash_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsHash_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHash(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsHash() {
+        
+        paramsHash_ = getDefaultInstance().getParamsHash();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsHash = 1;</code>
+       * @param value The bytes for paramsHash to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsHashBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsHash_ = value;
+        onChanged();
+        return this;
+      }
+      @Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:GetContractInput)
+    }
+
+    // @@protoc_insertion_point(class_scope:GetContractInput)
+    private static final GetContractInput DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new GetContractInput();
+    }
+
+    public static GetContractInput getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GetContractInput>
+        PARSER = new com.google.protobuf.AbstractParser<GetContractInput>() {
+      @Override
+      public GetContractInput parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetContractInput(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetContractInput> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<GetContractInput> getParserForType() {
+      return PARSER;
+    }
+
+    @Override
+    public GetContractInput getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GetContractOutputOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:GetContractOutput)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The paramsJson.
+     */
+    String getParamsJson();
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The bytes for paramsJson.
+     */
+    com.google.protobuf.ByteString
+        getParamsJsonBytes();
+  }
+  /**
+   * Protobuf type {@code GetContractOutput}
+   */
+  public  static final class GetContractOutput extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:GetContractOutput)
+      GetContractOutputOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GetContractOutput.newBuilder() to construct.
+    private GetContractOutput(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GetContractOutput() {
+      paramsJson_ = "";
+    }
+
+    @Override
+    @SuppressWarnings({"unused"})
+    protected Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GetContractOutput();
+    }
+
+    @Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GetContractOutput(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              String s = input.readStringRequireUtf8();
+
+              paramsJson_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return MultiLanguageContractOuterClass.internal_static_GetContractOutput_descriptor;
+    }
+
+    @Override
+    protected FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return MultiLanguageContractOuterClass.internal_static_GetContractOutput_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              GetContractOutput.class, Builder.class);
+    }
+
+    public static final int PARAMSJSON_FIELD_NUMBER = 1;
+    private volatile Object paramsJson_;
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The paramsJson.
+     */
+    public String getParamsJson() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        paramsJson_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string paramsJson = 1;</code>
+     * @return The bytes for paramsJson.
+     */
+    public com.google.protobuf.ByteString
+        getParamsJsonBytes() {
+      Object ref = paramsJson_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (String) ref);
+        paramsJson_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getParamsJsonBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, paramsJson_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getParamsJsonBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, paramsJson_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @Override
+    public boolean equals(final Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof GetContractOutput)) {
+        return super.equals(obj);
+      }
+      GetContractOutput other = (GetContractOutput) obj;
+
+      if (!getParamsJson()
+          .equals(other.getParamsJson())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + PARAMSJSON_FIELD_NUMBER;
+      hash = (53 * hash) + getParamsJson().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static GetContractOutput parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractOutput parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractOutput parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractOutput parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractOutput parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static GetContractOutput parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static GetContractOutput parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GetContractOutput parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GetContractOutput parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static GetContractOutput parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static GetContractOutput parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static GetContractOutput parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(GetContractOutput prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @Override
+    protected Builder newBuilderForType(
+        BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code GetContractOutput}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:GetContractOutput)
+        GetContractOutputOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractOutput_descriptor;
+      }
+
+      @Override
+      protected FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractOutput_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                GetContractOutput.class, Builder.class);
+      }
+
+      // Construct using MultiLanguageContractOuterClass.GetContractOutput.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @Override
+      public Builder clear() {
+        super.clear();
+        paramsJson_ = "";
+
+        return this;
+      }
+
+      @Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return MultiLanguageContractOuterClass.internal_static_GetContractOutput_descriptor;
+      }
+
+      @Override
+      public GetContractOutput getDefaultInstanceForType() {
+        return GetContractOutput.getDefaultInstance();
+      }
+
+      @Override
+      public GetContractOutput build() {
+        GetContractOutput result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @Override
+      public GetContractOutput buildPartial() {
+        GetContractOutput result = new GetContractOutput(this);
+        result.paramsJson_ = paramsJson_;
+        onBuilt();
+        return result;
+      }
+
+      @Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.setField(field, value);
+      }
+      @Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof GetContractOutput) {
+          return mergeFrom((GetContractOutput)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(GetContractOutput other) {
+        if (other == GetContractOutput.getDefaultInstance()) return this;
+        if (!other.getParamsJson().isEmpty()) {
+          paramsJson_ = other.paramsJson_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        GetContractOutput parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (GetContractOutput) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private Object paramsJson_ = "";
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return The paramsJson.
+       */
+      public String getParamsJson() {
+        Object ref = paramsJson_;
+        if (!(ref instanceof String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          String s = bs.toStringUtf8();
+          paramsJson_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return The bytes for paramsJson.
+       */
+      public com.google.protobuf.ByteString
+          getParamsJsonBytes() {
+        Object ref = paramsJson_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (String) ref);
+          paramsJson_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @param value The paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJson(
+          String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamsJson() {
+        
+        paramsJson_ = getDefaultInstance().getParamsJson();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string paramsJson = 1;</code>
+       * @param value The bytes for paramsJson to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamsJsonBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        paramsJson_ = value;
+        onChanged();
+        return this;
+      }
+      @Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:GetContractOutput)
+    }
+
+    // @@protoc_insertion_point(class_scope:GetContractOutput)
+    private static final GetContractOutput DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new GetContractOutput();
+    }
+
+    public static GetContractOutput getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GetContractOutput>
+        PARSER = new com.google.protobuf.AbstractParser<GetContractOutput>() {
+      @Override
+      public GetContractOutput parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GetContractOutput(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GetContractOutput> parser() {
+      return PARSER;
+    }
+
+    @Override
+    public com.google.protobuf.Parser<GetContractOutput> getParserForType() {
+      return PARSER;
+    }
+
+    @Override
+    public GetContractOutput getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_InitializeInput_descriptor;
   private static final 
@@ -4841,6 +7819,31 @@ public final class MultiLanguageContractOuterClass {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_JsonStringList_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SetContractInput_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SetContractInput_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SetContractKey_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SetContractKey_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_SetContractValue_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_SetContractValue_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_GetContractInput_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_GetContractInput_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_GetContractOutput_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_GetContractOutput_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -4851,24 +7854,33 @@ public final class MultiLanguageContractOuterClass {
   static {
     String[] descriptorData = {
       "\n\035multi_language_contract.proto\032\ncore.pr" +
-      "oto\032\014client.proto\032\033google/protobuf/empty" +
-      ".proto\"\037\n\017InitializeInput\022\014\n\004flag\030\001 \001(\t\"" +
-      "\035\n\010GetInput\022\021\n\tclassName\030\001 \001(\t\"1\n\010SetInp" +
-      "ut\022\021\n\tclassName\030\001 \001(\t\022\022\n\njsonString\030\002 \001(" +
-      "\t\"\037\n\tGetReturn\022\022\n\njsonString\030\001 \001(\t\";\n\013Ad" +
-      "dressName\022\031\n\007address\030\001 \001(\0132\010.Address\022\021\n\t" +
-      "className\030\002 \001(\t\"\'\n\010NameList\022\033\n\010nameList\030" +
-      "\001 \003(\0132\t.GetInput\"4\n\016JsonStringList\022\"\n\016js" +
-      "onStringList\030\001 \003(\0132\n.GetReturn2\235\001\n\025Multi" +
-      "LanguageContract\0228\n\nInitialize\022\020.Initial" +
-      "izeInput\032\026.google.protobuf.Empty\"\000\022\036\n\003Ge" +
-      "t\022\t.GetInput\032\n.GetReturn\"\000\022*\n\003Set\022\t.SetI" +
-      "nput\032\026.google.protobuf.Empty\"\000b\006proto3"
+      "oto\032\roptions.proto\032\014client.proto\032\033google" +
+      "/protobuf/empty.proto\"\037\n\017InitializeInput" +
+      "\022\014\n\004flag\030\001 \001(\t\"\035\n\010GetInput\022\021\n\tclassName\030" +
+      "\001 \001(\t\"1\n\010SetInput\022\021\n\tclassName\030\001 \001(\t\022\022\n\n" +
+      "jsonString\030\002 \001(\t\"\037\n\tGetReturn\022\022\n\njsonStr" +
+      "ing\030\001 \001(\t\";\n\013AddressName\022\031\n\007address\030\001 \001(" +
+      "\0132\010.Address\022\021\n\tclassName\030\002 \001(\t\"\'\n\010NameLi" +
+      "st\022\033\n\010nameList\030\001 \003(\0132\t.GetInput\"4\n\016JsonS" +
+      "tringList\022\"\n\016jsonStringList\030\001 \003(\0132\n.GetR" +
+      "eturn\":\n\020SetContractInput\022\022\n\nparamsHash\030" +
+      "\001 \001(\t\022\022\n\nparamsJson\030\002 \001(\t\"$\n\016SetContract" +
+      "Key\022\022\n\nparamsHash\030\001 \001(\t\"&\n\020SetContractVa" +
+      "lue\022\022\n\nparamsJson\030\001 \001(\t\"&\n\020GetContractIn" +
+      "put\022\022\n\nparamsHash\030\001 \001(\t\"\'\n\021GetContractOu" +
+      "tput\022\022\n\nparamsJson\030\001 \001(\t2\327\001\n\025MultiLangua" +
+      "geContract\022\036\n\003Get\022\t.GetInput\032\n.GetReturn" +
+      "\"\000\022*\n\003Set\022\t.SetInput\032\026.google.protobuf.E" +
+      "mpty\"\000\022:\n\013SetContract\022\021.SetContractInput" +
+      "\032\026.google.protobuf.Empty\"\000\0226\n\013GetContrac" +
+      "t\022\021.GetContractInput\032\022.GetContractOutput" +
+      "\"\000b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
           Core.getDescriptor(),
+          aelf.Options.getDescriptor(),
           Client.getDescriptor(),
           com.google.protobuf.EmptyProto.getDescriptor(),
         });
@@ -4914,7 +7926,38 @@ public final class MultiLanguageContractOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_JsonStringList_descriptor,
         new String[] { "JsonStringList", });
+    internal_static_SetContractInput_descriptor =
+      getDescriptor().getMessageTypes().get(7);
+    internal_static_SetContractInput_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SetContractInput_descriptor,
+        new String[] { "ParamsHash", "ParamsJson", });
+    internal_static_SetContractKey_descriptor =
+      getDescriptor().getMessageTypes().get(8);
+    internal_static_SetContractKey_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SetContractKey_descriptor,
+        new String[] { "ParamsHash", });
+    internal_static_SetContractValue_descriptor =
+      getDescriptor().getMessageTypes().get(9);
+    internal_static_SetContractValue_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_SetContractValue_descriptor,
+        new String[] { "ParamsJson", });
+    internal_static_GetContractInput_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_GetContractInput_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_GetContractInput_descriptor,
+        new String[] { "ParamsHash", });
+    internal_static_GetContractOutput_descriptor =
+      getDescriptor().getMessageTypes().get(11);
+    internal_static_GetContractOutput_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_GetContractOutput_descriptor,
+        new String[] { "ParamsJson", });
     Core.getDescriptor();
+    aelf.Options.getDescriptor();
     Client.getDescriptor();
     com.google.protobuf.EmptyProto.getDescriptor();
   }

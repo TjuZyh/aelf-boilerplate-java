@@ -15,9 +15,8 @@ import java.util.List;
  */
 public class testMain {
     public static void main(String[] args) throws Exception {
-        UserManagementImpl userManagement = new UserManagementImpl();
+        //UserManagementImpl userManagement = new UserManagementImpl();
         BlockChainServiceImpl blockChainService = new BlockChainServiceImpl();
-
 
         //String allUser = userManagement.getAllUser();
         /*List<Person> personList = new ArrayList<>();
@@ -36,8 +35,7 @@ public class testMain {
         person.setName("aaa");
         person.setId(111);
 
-        blockChainService.setInfo("person" , JSONObject.toJSONString(person));*/
+        blockChainService.setInfo("aaa" , JSONObject.toJSONString(person));*/
 
-        //blockChainService.InitializeMultiLContract();
     }
 }
